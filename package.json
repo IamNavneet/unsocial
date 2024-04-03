@@ -37,7 +37,7 @@
     "typescript": "^5.4.3"
   },
   "lint-staged": {
-    "./src/**/*.ts": [
+    ".ts": [
       "npm run prettier:fix",
       "npm run lint",
       "git add ."
