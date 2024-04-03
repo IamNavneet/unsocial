@@ -4,7 +4,10 @@ const port = 3000;
 const app = express();
 
 app.get('*', (req, res) => {
-  res.send({});
+  res.send({
+    success: true,
+    message: "route is running properly!"
+  });
 });
 
 app.listen(port, () => {
