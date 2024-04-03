@@ -1,15 +1,5 @@
-import express from 'express';
-const port = 3000;
+import app from './app';
 
-const app = express();
-
-app.get('*', (req, res) => {
-  res.send({
-    success: true,
-    message: "route is running properly!"
-  });
-});
-
-app.listen(port, () => {
-  console.log('app is up and running on port: ', port);
+app.listen(3000, () => {
+  console.log('app is up and running on port: ', 3000);
 });
