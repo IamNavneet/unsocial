@@ -38,9 +38,9 @@
   },
   "lint-staged": {
     "src/**/*.ts": [
+      "npm run prettier:fix",
       "npm run lint",
-      "npm run prettier",
-      "git add"
+      "git add ."
     ]
   },
   "husky": {
