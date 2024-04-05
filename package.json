@@ -43,7 +43,7 @@
       "npm run lint",
       "git add ."
     ],
-    ".ts": [
+    "*.ts": [
       "npm run prettier:fix",
       "npm run lint",
       "git add ."
