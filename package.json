@@ -15,6 +15,18 @@
     "testEnvironment": "node",
     "preset": "ts-jest"
   },
+  "lint-staged": {
+    "*.ts": [
+      "npm run prettier:fix",
+      "npm run lint",
+      "git add ."
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
   "keywords": [],
   "author": "Navneet Pandey",
   "license": "ISC",
@@ -35,17 +47,6 @@
     "supertest": "^6.3.4",
     "ts-jest": "^29.1.2",
     "typescript": "^5.4.3"
-  },
-  "lint-staged": {
-    "*.ts": [
-      "npm run prettier:fix",
-      "npm run lint",
-      "git add ."
-    ]
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
   }
+  
 }
