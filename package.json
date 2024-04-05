@@ -36,7 +36,6 @@
     "ts-jest": "^29.1.2",
     "typescript": "^5.4.3"
   },
-
   "lint-staged": {
     "*.(ts|js|html|css)": [
       "npm run prettier:fix",
