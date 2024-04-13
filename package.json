@@ -9,7 +9,7 @@
     "prettier:fix": "prettier --write ./src/**/*.ts",
     "start:dev": "nodemon src/index.ts",
     "start": "echo starting prod server",
-    "test": "jest"
+    "test": "jest --watchAll --no-cache"
   },
   "jest": {
     "testEnvironment": "node",
@@ -30,6 +30,7 @@
   "author": "Navneet Pandey",
   "license": "ISC",
   "dependencies": {
+    "body-parser": "^1.20.2",
     "express": "^4.19.2",
     "ts-node": "^10.9.2"
   },
