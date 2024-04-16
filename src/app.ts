@@ -1,6 +1,6 @@
 import express from 'express';
-import { signupRouter } from './routes';
 import { json } from 'body-parser';
+import { signupRouter } from './routes';
 
 const app = express();
 
